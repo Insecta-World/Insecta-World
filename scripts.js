@@ -112,9 +112,9 @@ const FPuzzles = [
   { word: 'GRASSHOPPER', images: ['hopping.png', 'camou.jpg', 'grass.jpg', 'jumping-rope.jpg'] },
   { word: 'BEE', images: ['mesh.png', 'crown.jpg', 'beyonce.jpg', 'hany.jpg'] },
   { word: 'BUTTERFLY', images: ['sleeping-300x300.jpg', 'mariahcarey.jpg', 'butter.jpg', 'flower.jpg'] },
-  { word: 'ANTS', images: ['antenna.jpg', 'lifting.jpg', 'mound.jpg', 'lining-up.png'] },
-  { word: 'SPIDERS', images: ['match_box.jpg', 'cobweb.jpg', 'Tom-Holland-3994868858.jpg', 'miles-morales.jpg'] },
-  { word: 'COCKROACHES', images: ['fly-swatter.jpg', 'slipper.jpg', 'rooster.jpg', 'oggy-and-the-cockroaches.jpg'] },
+  { word: 'ANT', images: ['antenna.jpg', 'lifting.jpg', 'mound.jpg', 'lining-up.png'] },
+  { word: 'SPIDER', images: ['match_box.jpg', 'cobweb.jpg', 'Tom-Holland-3994868858.jpg', 'miles-morales.jpg'] },
+  { word: 'COCKROACH', images: ['fly-swatter.jpg', 'slipper.jpg', 'rooster.jpg', 'oggy-and-the-cockroaches.jpg'] },
 ];
 let fpIndex = 0, fpScore = 0, fpAnswered = false;
 
