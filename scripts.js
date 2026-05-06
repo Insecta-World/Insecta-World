@@ -140,6 +140,7 @@ function startGame(mode) {
 function initFP() {
   fpIndex = 0; fpScore = 0; fpAnswered = false;
   document.getElementById('fpScore').style.display = 'none';
+  document.getElementById('fpControls').style.display = 'block';
   document.getElementById('fpNext').classList.remove('show');
   document.getElementById('fpSubmit').classList.add('show');
   loadFP();
@@ -182,12 +183,18 @@ function submitFP() {
     fpScore++;
     res.textContent = '✅ Great! That is correct.';
     res.className = 'qres show ok';
+    if (fpIndex === FPuzzles.length - 1) {
+      setTimeout(() => showFPScore(), 1000);
+    } else {
+      document.getElementById('fpSubmit').classList.remove('show');
+      document.getElementById('fpNext').classList.add('show');
+    }
   } else {
     res.textContent = `❌ Not quite. The answer is ${fp.word}.`;
     res.className = 'qres show ng';
+    document.getElementById('fpSubmit').classList.remove('show');
+    document.getElementById('fpNext').classList.add('show');
   }
-  document.getElementById('fpSubmit').classList.remove('show');
-  document.getElementById('fpNext').classList.add('show');
 }
 
 function nextFP() { fpIndex++; loadFP(); }
@@ -196,6 +203,7 @@ function showFPScore() {
   document.getElementById('fpScore').style.display = 'block';
   document.getElementById('fpScoreNum').textContent = `${fpScore}/${FPuzzles.length}`;
   document.getElementById('fpImages').innerHTML = '';
+  document.getElementById('fpControls').style.display = 'none';
   document.getElementById('fpProgress').textContent = 'All done!';
   document.getElementById('fpRes').className = 'qres';
   document.getElementById('fpRes').textContent = '';

@@ -446,7 +446,7 @@ a{
 
 .fourpics-img {
     width: 100%;
-    height: 120px;
+    height: 250px;
     object-fit: cover;
     border-radius: 14px;
     border: 2px solid rgba(139, 94, 60, .18);
@@ -471,7 +471,7 @@ a{
 
 #fpGuess {
     flex: 1 1 220px;
-    min-width: 180px;
+    min-width: 100%;
     padding: 11px 13px;
     border-radius: 12px;
     border: 1px solid rgba(139, 94, 60, .24);
@@ -632,4 +632,11 @@ a{
     .scorenum {
         font-size: 38px;
     }
+    .fourpics-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid rgba(139, 94, 60, .18);
+}
 }
